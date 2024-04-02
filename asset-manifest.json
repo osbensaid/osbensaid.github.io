@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/osbensaid.github.io/static/css/main.bc7c71e1.css",
+    "main.js": "/osbensaid.github.io/static/js/main.10b528b0.js",
+    "static/media/006.jpg": "/osbensaid.github.io/static/media/006.1af38b6a7a416b975b8c.jpg",
+    "static/media/001.png": "/osbensaid.github.io/static/media/001.8ee0287576d7bd45c2e0.png",
+    "static/media/005.jpg": "/osbensaid.github.io/static/media/005.89a134ec22d5fe8964fd.jpg",
+    "index.html": "/osbensaid.github.io/index.html",
+    "main.bc7c71e1.css.map": "/osbensaid.github.io/static/css/main.bc7c71e1.css.map",
+    "main.10b528b0.js.map": "/osbensaid.github.io/static/js/main.10b528b0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc7c71e1.css",
+    "static/js/main.10b528b0.js"
+  ]
+}
