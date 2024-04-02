@@ -1,0 +1,18 @@
+.footer {
+  background: var(--primary-color);
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+}
+
+.footer p {
+  color: var(--bg-color);
+}
+
+/* Small than 600px */
+@media only screen and (max-width: 600px) {
+}
