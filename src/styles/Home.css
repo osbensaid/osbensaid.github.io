@@ -624,6 +624,11 @@
     padding: 2rem 1.25rem 0;
   }
 
+  .hero::before,
+  .hero::after {
+    display: none;
+  }
+
   .hero-inner {
     width: 100%;
     padding: 1.25rem 0;
@@ -682,12 +687,17 @@
     padding: 3rem 1.25rem 4rem;
   }
 
+  .exp-section .lp-inner,
+  .proj-section .lp-inner {
+    width: 100%;
+  }
+
   .proj-grid {
     grid-template-columns: 1fr;
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 768px) and (max-width: 900px) {
   .proj-grid {
     grid-template-columns: repeat(2, 1fr);
   }
