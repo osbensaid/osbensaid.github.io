@@ -23,10 +23,11 @@ function Home() {
               Oussama<br />Bensaid
             </h1>
             <span className="hero-divider" />
-            <p className="hero-tagline">Full Stack Engineer | React | Node.js | TypeScript</p>
+            <p className="hero-tagline">Full Stack Engineer | Data Analyst | Cloud & AI Enthusiast</p>
             <p className="hero-bio">
-              Building production-grade web applications at RadixBay for {yearsExp}+ years.
-              Self-taught, AWS-certified, and focused on software that ships.
+              {yearsExp}+ years building production systems at RadixBay, now bridging software
+              engineering and data analytics. AWS and Power BI certified. I understand the systems
+              that generate data, which makes me faster at accessing, cleaning, and turning it into decisions.
             </p>
             <div className="hero-actions">
               <a
@@ -80,7 +81,7 @@ function Home() {
             <span className="stat-lbl">Years Experience</span>
           </div>
           <div className="stat">
-            <span className="stat-val">3</span>
+            <span className="stat-val">4</span>
             <span className="stat-lbl">Certifications</span>
           </div>
           <div className="stat">
@@ -96,27 +97,27 @@ function Home() {
           <h2 className="skills-heading">Skills</h2>
 
           <div className="skill-tier">
-            <p className="tier-label">Core Expertise</p>
+            <p className="tier-label">Full Stack</p>
             <div className="chips">
-              {["React", "TypeScript", "Node.js", "NestJS", "MySQL", "REST APIs"].map((s) => (
+              {["React", "TypeScript", "Node.js", "NestJS", "MySQL", "REST APIs", "Vue.js", "MongoDB"].map((s) => (
                 <span key={s} className="chip chip-core">{s}</span>
               ))}
             </div>
           </div>
 
           <div className="skill-tier">
-            <p className="tier-label">Proficient</p>
+            <p className="tier-label">Data & Analytics</p>
             <div className="chips">
-              {["Vue.js", "Redux", "MongoDB", "Python", "AWS", "SASS", "TypeORM", "ExpressJS"].map((s) => (
+              {["Power BI", "Python", "SQL", "DAX", "Data Modeling", "ETL Pipelines"].map((s) => (
                 <span key={s} className="chip chip-proficient">{s}</span>
               ))}
             </div>
           </div>
 
           <div className="skill-tier">
-            <p className="tier-label">Familiar</p>
+            <p className="tier-label">Cloud & Tools</p>
             <div className="chips">
-              {["Next.js", "GraphQL", "Java", "Stripe", "Bootstrap", "Storybook", "Chakra UI"].map((s) => (
+              {["AWS", "TypeORM", "ExpressJS", "SASS", "GraphQL", "Next.js"].map((s) => (
                 <span key={s} className="chip chip-familiar">{s}</span>
               ))}
             </div>

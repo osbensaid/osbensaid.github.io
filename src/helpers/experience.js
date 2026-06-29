@@ -1,5 +1,23 @@
 const expriences = [
   {
+    id: 8,
+    title: "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
+    location: "",
+    description:
+      "Microsoft certification validating expertise in Power BI, including data modeling, DAX, report and dashboard design, and data-driven decision making. Demonstrates proficiency in transforming raw data into actionable business insights using the Microsoft Power Platform.",
+    date: "2026",
+    icon: "school",
+  },
+  {
+    id: 7,
+    title: "BS in Computer Science - Coastal Carolina University",
+    location: "Conway, SC",
+    description:
+      "Bachelor of Science in Computer Science at Coastal Carolina University, expected graduation 2026. Focused on software engineering, algorithms, and AI/machine learning fundamentals while actively working as a Software Developer at RadixBay.",
+    date: "2023 - 2026",
+    icon: "school",
+  },
+  {
     id: 6,
     title: "PCEP - Certified Entry-Level Python Programmer",
     location: "Myrtle Beach, SC",
