@@ -5,7 +5,6 @@ function Footer() {
   const currentYear = new Date().getFullYear();
   return (
     <div className="footer">
-      <p>&copy; {currentYear} Oussama Bensaid. All Rights Reserved.</p>
       <button
         className="back-to-top"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -13,6 +12,7 @@ function Footer() {
       >
         <KeyboardArrowUpIcon />
       </button>
+      <p>&copy; {currentYear} Oussama Bensaid. All Rights Reserved.</p>
     </div>
   );
 }

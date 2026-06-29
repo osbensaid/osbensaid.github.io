@@ -38,7 +38,15 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .footer {
+    height: auto;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.25rem 1rem;
+  }
+
   .back-to-top {
-    right: 1.25rem;
+    position: static;
+    transform: none;
   }
 }

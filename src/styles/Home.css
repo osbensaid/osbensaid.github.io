@@ -616,10 +616,6 @@
 
 /* Mobile */
 @media only screen and (max-width: 600px) {
-  .home {
-    overflow-x: hidden;
-  }
-
   .hero {
     padding: 2rem 1.25rem 0;
   }
