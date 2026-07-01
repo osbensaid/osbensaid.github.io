@@ -18,15 +18,6 @@ const expriences = [
     icon: "school",
   },
   {
-    id: 6,
-    title: "PCEP - Certified Entry-Level Python Programmer",
-    location: "Myrtle Beach, SC",
-    description:
-      "Earners of the PCEP - Certified Entry-Level Python Programmer certification have knowledge of the universal concepts of computer programming, the syntax and semantics of the Python language as well as demonstrate the ability to accomplish coding tasks related to the essentials of programming in the Python language and fundamental skills in resolving typical implementation challenges with the help of the Python Standard Library.",
-    date: "2023 - 2024",
-    icon: "school",
-  },
-  {
     id: 5,
     title: "Graph Developer - Associate",
     location: "Myrtle Beach, SC",
@@ -58,17 +49,8 @@ const expriences = [
     title: "AAS in Computer Technology - Programming",
     location: "Myrtle Beach, SC",
     description:
-      "Associate degree in Computer Technology - Programming, in Horry-Georgetown Technical College prepares students for entry-level positions in a vast number of industries. This degree provides skills in a variety of programming languages, such as Python, Java, JavaScript, HTML, CSS, Mobile Apps, and SQL.",
+      "Associate degree at Horry-Georgetown Technical College covering Python, Java, JavaScript, HTML/CSS, mobile apps, and SQL.",
     date: "2018 - 2021",
-    icon: "school",
-  },
-  {
-    id: 1,
-    title: "GED - General Educational Development",
-    location: "Myrtle Beach, SC",
-    description:
-      "Myrtle Beach Family Learning Center is located in Myrtle Beach, SC. This school offers training, for General Educational Development (GED) Certification. I completed this education training ranges from 5 months to 6 months. The most commonly reported benefits of attending Myrtle Beach Family Learning Center Unit are Flexible class hours and a Positive environment.",
-    date: "2016 - 2017",
     icon: "school",
   },
 ];

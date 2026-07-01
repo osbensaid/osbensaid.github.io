@@ -1,3 +1,4 @@
+import DatasetIcon from "@mui/icons-material/Dataset";
 import DownloadIcon from "@mui/icons-material/Download";
 import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -23,7 +24,7 @@ function Home() {
               Oussama<br />Bensaid
             </h1>
             <span className="hero-divider" />
-            <p className="hero-tagline">Full Stack Engineer | Data Analyst | Cloud & AI Enthusiast</p>
+            <p className="hero-tagline">Data Analyst | Full Stack Engineer</p>
             <p className="hero-bio">
               {yearsExp}+ years building production systems at RadixBay, now bridging software
               engineering and data analytics. AWS and Power BI certified. I understand the systems
@@ -81,12 +82,8 @@ function Home() {
             <span className="stat-lbl">Years Experience</span>
           </div>
           <div className="stat">
-            <span className="stat-val">4</span>
+            <span className="stat-val">3</span>
             <span className="stat-lbl">Certifications</span>
-          </div>
-          <div className="stat">
-            <span className="stat-val">10+</span>
-            <span className="stat-lbl">Technologies</span>
           </div>
         </div>
       </div>
@@ -97,28 +94,19 @@ function Home() {
           <h2 className="skills-heading">Skills</h2>
 
           <div className="skill-tier">
-            <p className="tier-label">Full Stack</p>
+            <p className="tier-label">Data & Analytics</p>
             <div className="chips">
-              {["React", "TypeScript", "Node.js", "NestJS", "MySQL", "REST APIs", "Vue.js", "MongoDB"].map((s) => (
+              {["Power BI", "Python", "SQL", "DAX", "Data Modeling", "ETL Pipelines", "Azure Data Factory"].map((s) => (
                 <span key={s} className="chip chip-core">{s}</span>
               ))}
             </div>
           </div>
 
           <div className="skill-tier">
-            <p className="tier-label">Data & Analytics</p>
+            <p className="tier-label">Full Stack & Cloud</p>
             <div className="chips">
-              {["Power BI", "Python", "SQL", "DAX", "Data Modeling", "ETL Pipelines"].map((s) => (
+              {["React", "Next.js", "TypeScript", "Node.js", "NestJS", "MySQL", "REST APIs", "ExpressJS", "Vue.js", "MongoDB", "AWS"].map((s) => (
                 <span key={s} className="chip chip-proficient">{s}</span>
-              ))}
-            </div>
-          </div>
-
-          <div className="skill-tier">
-            <p className="tier-label">Cloud & Tools</p>
-            <div className="chips">
-              {["AWS", "TypeORM", "ExpressJS", "SASS", "GraphQL", "Next.js"].map((s) => (
-                <span key={s} className="chip chip-familiar">{s}</span>
               ))}
             </div>
           </div>
@@ -157,27 +145,42 @@ function Home() {
           <div className="proj-grid">
             {projects.map((project) => (
               <div key={project.id} className="proj-card">
-                <div className="proj-img">
-                  <img src={project.image} alt={project.name} />
-                </div>
+                {project.image ? (
+                  <div className="proj-img">
+                    <img src={project.image} alt={project.name} />
+                  </div>
+                ) : (
+                  <div className="proj-img proj-img--placeholder">
+                    <DatasetIcon />
+                  </div>
+                )}
                 <div className="proj-body">
-                  <h3 className="proj-name">{project.name}</h3>
+                  <div className="proj-head">
+                    <h3 className="proj-name">{project.name}</h3>
+                    <span className={`proj-status proj-status--${project.status}`}>
+                      {project.status === "live" ? "Live" : "Planned"}
+                    </span>
+                  </div>
                   <div className="proj-tags">
                     {project.tags.map((tag) => (
                       <span key={tag} className="proj-tag">{tag}</span>
                     ))}
                   </div>
                   <p className="proj-desc">{project.description}</p>
-                  <div className="proj-links">
-                    <a href={project.codeUrl} target="_blank" rel="noreferrer" className="proj-link">
-                      <GitHubIcon fontSize="small" />
-                      Code
-                    </a>
-                    <a href={project.viewUrl} target="_blank" rel="noreferrer" className="proj-link proj-link--view">
-                      <VisibilityIcon fontSize="small" />
-                      Live
-                    </a>
-                  </div>
+                  {project.status === "live" ? (
+                    <div className="proj-links">
+                      <a href={project.codeUrl} target="_blank" rel="noreferrer" className="proj-link">
+                        <GitHubIcon fontSize="small" />
+                        Code
+                      </a>
+                      <a href={project.viewUrl} target="_blank" rel="noreferrer" className="proj-link proj-link--view">
+                        <VisibilityIcon fontSize="small" />
+                        Live
+                      </a>
+                    </div>
+                  ) : (
+                    <p className="proj-soon">Repo link coming once built</p>
+                  )}
                 </div>
               </div>
             ))}

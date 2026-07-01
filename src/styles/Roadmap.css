@@ -1,0 +1,208 @@
+/* ─── Roadmap hero ──────────────────────────────── */
+.roadmap-hero {
+  padding: 6rem 2rem 3rem;
+  background: #f4f6f9;
+}
+
+.roadmap-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #5a6b7e;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+}
+
+.roadmap-back:hover {
+  color: var(--primary-color);
+}
+
+.roadmap-heading {
+  font-size: clamp(1.9rem, 4vw, 2.75rem);
+  font-weight: 900;
+  color: var(--primary-color);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.25rem;
+  text-wrap: balance;
+}
+
+.roadmap-thesis {
+  font-size: 1rem;
+  color: #4a5a6e;
+  line-height: 1.8;
+  max-width: 68ch;
+  margin-bottom: 2.5rem;
+}
+
+.roadmap-baseline {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background: #ffffff;
+  border: 1px solid #e8ecf1;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.roadmap-baseline-col {
+  flex: 1;
+  min-width: 240px;
+}
+
+.roadmap-baseline-arrow {
+  font-size: 1.4rem;
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+/* ─── Phases ────────────────────────────────────── */
+.roadmap-phase-body {
+  width: 100%;
+}
+
+.roadmap-phase-num {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 0.95rem;
+}
+
+.roadmap-phase-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem 2rem;
+  margin: 1.25rem 0;
+}
+
+.roadmap-block-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #7a8a9e;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.roadmap-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.9rem;
+  color: #4a5a6e;
+  line-height: 1.7;
+}
+
+.roadmap-list li {
+  margin-bottom: 0.2rem;
+}
+
+.roadmap-cert-pill {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.35rem 0.8rem;
+  border-radius: 4px;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.roadmap-cert-pill--none {
+  background: transparent;
+  border: 1px dashed #c8d0db;
+  color: #7a8a9e;
+  font-weight: 500;
+}
+
+.roadmap-project {
+  border-top: 1px dashed #dde2ea;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.roadmap-exit {
+  font-size: 0.85rem;
+  color: #5a6b7e;
+  border-top: 1px dashed #dde2ea;
+  padding-top: 1rem;
+}
+
+.roadmap-exit strong {
+  color: var(--primary-color);
+}
+
+/* ─── Certification ladder ──────────────────────── */
+.roadmap-ladder-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.roadmap-ladder-step {
+  position: relative;
+  flex: 1 1 170px;
+  border: 1px solid #e8ecf1;
+  border-radius: 8px;
+  padding: 1.1rem 1.25rem;
+}
+
+.roadmap-ladder-step--done {
+  background: #f4f6f9;
+  border-color: #dde2ea;
+}
+
+.roadmap-ladder-step--next {
+  border-color: var(--secondary-color);
+  border-width: 1.5px;
+}
+
+.roadmap-ladder-check {
+  color: #1a7a45;
+  margin-bottom: 0.4rem;
+}
+
+.roadmap-ladder-name {
+  font-weight: 700;
+  color: var(--primary-color);
+  font-size: 0.95rem;
+  margin-bottom: 0.2rem;
+}
+
+.roadmap-ladder-detail {
+  font-size: 0.75rem;
+  color: #7a8a9e;
+}
+
+.roadmap-ladder-tag {
+  display: inline-block;
+  margin-top: 0.6rem;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+}
+
+/* ─── Responsive ────────────────────────────────── */
+@media only screen and (max-width: 600px) {
+  .roadmap-hero {
+    padding: 4rem 1.25rem 2rem;
+  }
+
+  .roadmap-phase-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .roadmap-baseline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .roadmap-baseline-arrow {
+    transform: rotate(90deg);
+  }
+}
